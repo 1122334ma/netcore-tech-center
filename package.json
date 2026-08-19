@@ -2,6 +2,7 @@
   "name": "netcore-tech-center",
   "version": "1.0.0",
   "description": "磊科产品技术知识库",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
