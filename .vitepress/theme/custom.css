@@ -1,0 +1,88 @@
+/* 磊科技术中心 - 自定义主题样式 */
+
+/* 主色调：科技蓝 */
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e40af;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.14);
+  --vp-c-brand-1-dark: #3b82f6;
+  --vp-c-brand-2-dark: #2563eb;
+  --vp-c-brand-3-dark: #1d4ed8;
+  --vp-c-brand-soft-dark: rgba(59, 130, 246, 0.16);
+
+  /* 按钮渐变 */
+  --vp-button-brand-bg: #2563eb;
+  --vp-button-brand-hover-bg: #1d4ed8;
+  --vp-button-brand-active-bg: #1e40af;
+}
+
+/* 首页英雄区背景渐变 */
+.VPHomeHero .container {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 48px 32px;
+  margin: 24px 0;
+}
+
+.VPHero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 48px 32px;
+  color: #fff !important;
+}
+
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  color: #fff !important;
+}
+
+/* 首页特性卡片 */
+.VPHomeFeatures .container {
+  margin-top: 32px;
+}
+
+.VPFeature {
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.VPFeature:hover {
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 页脚 */
+.VPFooter {
+  background-color: var(--vp-c-bg);
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 表格美化 */
+.vp-doc table {
+  display: block;
+  border-collapse: collapse;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-brand-soft);
+  font-weight: 600;
+}
+
+/* 引用块美化 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 20px;
+}
+
+/* 代码块美化 */
+.vp-doc :not(pre) > code {
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 4px;
+  padding: 2px 6px;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "netcore-tech-center",
+  "version": "1.0.0",
+  "description": "磊科产品技术知识库",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
