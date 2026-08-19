@@ -21,21 +21,61 @@
 .VPHomeHero .container {
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
   border-radius: 16px;
-  padding: 48px 32px;
+  padding: 64px 48px;
   margin: 24px 0;
 }
 
 .VPHero {
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
   border-radius: 16px;
-  padding: 48px 32px;
+  padding: 64px 48px;
   color: #fff !important;
+  text-align: center !important;
+}
+
+.VPHero .container {
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.VPHero .main {
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
 }
 
 .VPHero .name,
 .VPHero .text,
 .VPHero .tagline {
   color: #fff !important;
+  text-align: center !important;
+}
+
+.VPHero .name {
+  font-size: 1.5rem !important;
+  opacity: 0.95;
+}
+
+.VPHero .text {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+}
+
+.VPHero .tagline {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+.VPHero .actions {
+  justify-content: center !important;
+  margin-top: 32px;
+}
+
+.VPHero .actions > * {
+  margin: 0 8px;
 }
 
 /* 首页特性卡片 */
@@ -51,6 +91,33 @@
 .VPFeature:hover {
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
   transform: translateY(-2px);
+}
+
+/* 顶部导航栏 - 增加间距 */
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink {
+  padding: 0 20px !important;
+  font-size: 15px !important;
+}
+
+.VPNavBarMenuGroup .VPNavBarMenuLink {
+  margin: 0 4px !important;
+}
+
+/* 搜索框 - 变宽 */
+.VPNavBarSearchButton {
+  padding: 0 18px !important;
+  min-width: 220px !important;
+  height: 40px !important;
+}
+
+.VPNavBarSearchButton .DocSearch-Button-Placeholder {
+  font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+  .VPNavBarSearchButton {
+    min-width: 140px !important;
+  }
 }
 
 /* 页脚 */
