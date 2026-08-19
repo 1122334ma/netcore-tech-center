@@ -97,26 +97,34 @@
 .VPNavBar .VPNavBarMenu .VPNavBarMenuLink {
   padding: 0 20px !important;
   font-size: 15px !important;
+  letter-spacing: 0.5px;
 }
 
 .VPNavBarMenuGroup .VPNavBarMenuLink {
   margin: 0 4px !important;
 }
 
-/* 搜索框 - 变宽 */
-.VPNavBarSearchButton {
+/* 搜索框 - 变宽变大 */
+.VPNavBarSearch .DocSearch-Button {
   padding: 0 18px !important;
-  min-width: 220px !important;
+  min-width: 240px !important;
   height: 40px !important;
+  border-radius: 20px !important;
 }
 
-.VPNavBarSearchButton .DocSearch-Button-Placeholder {
+.VPNavBarSearch .DocSearch-Button .DocSearch-Button-Container {
+  gap: 8px;
+}
+
+.VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder {
   font-size: 14px !important;
+  padding: 0 4px;
 }
 
 @media (max-width: 768px) {
-  .VPNavBarSearchButton {
+  .VPNavBarSearch .DocSearch-Button {
     min-width: 140px !important;
+    padding: 0 10px !important;
   }
 }
 
