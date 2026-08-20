@@ -88,9 +88,11 @@ export function setupSearchHighlight() {
     'click',
     (e) => {
       const target = e.target as HTMLElement
-      const link = target.closest('a')
-      if (link && link.closest('.VPSearch')) {
-        const input = document.querySelector('.VPSearch input') as HTMLInputElement | null
+      const link = target.closest('a.result')
+      if (link && link.closest('.VPLocalSearchBox')) {
+        const input = document.querySelector(
+          '.VPLocalSearchBox .search-input',
+        ) as HTMLInputElement | null
         const q = input?.value?.trim()
         if (q) sessionStorage.setItem(STORAGE_KEY, q)
       }
@@ -104,7 +106,7 @@ export function setupSearchHighlight() {
     (e) => {
       if (e.key === 'Enter') {
         const input = e.target as HTMLInputElement
-        if (input && input.closest('.VPSearch')) {
+        if (input && input.closest('.VPLocalSearchBox')) {
           const q = input.value.trim()
           if (q) sessionStorage.setItem(STORAGE_KEY, q)
         }
