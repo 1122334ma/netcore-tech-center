@@ -221,3 +221,29 @@ div.VPHero .actions .VPButton.alt:hover {
   border-radius: 4px;
   padding: 2px 6px;
 }
+
+/* ===== 搜索结果高亮 ===== */
+mark.search-hit {
+  background-color: #ffe082;
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+  scroll-margin-top: 90px;
+}
+
+/* 第一个匹配项更醒目，便于快速定位 */
+mark.search-hit:first-of-type {
+  background-color: #ffb300;
+  font-weight: 600;
+}
+
+/* 暗色主题下高亮配色 */
+.dark mark.search-hit {
+  background-color: #a16207;
+  color: #fff;
+}
+
+.dark mark.search-hit:first-of-type {
+  background-color: #f59e0b;
+  color: #1a1a1a;
+}
