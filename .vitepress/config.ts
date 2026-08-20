@@ -59,6 +59,7 @@ export default defineConfig({
             { text: '企业级路由器', link: '/01-产品中心/企业级路由器' },
             { text: '无线AP与组网', link: '/01-产品中心/无线AP与组网' },
             { text: '交换机与POE供电', link: '/01-产品中心/交换机与POE供电' },
+            { text: '产品规格书下载', link: '/01-产品中心/产品规格书下载' },
           ],
         },
       ],

@@ -4,3 +4,5 @@ node_modules/
 .vitepress/.temp/
 .DS_Store
 *.log
+batch_download.py
+download_results.json
