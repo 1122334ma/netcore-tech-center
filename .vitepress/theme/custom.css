@@ -17,85 +17,125 @@
   --vp-button-brand-active-bg: #1e40af;
 }
 
-/* 首页英雄区背景渐变 */
+/* ===== 首页英雄区 - 居中 + 蓝白渐变背景 ===== */
+.VPHomeHero {
+  padding-top: 20px;
+}
+
 .VPHomeHero .container {
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
   border-radius: 16px;
-  padding: 64px 48px;
+  padding: 64px 48px !important;
   margin: 24px 0;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  max-width: 1152px !important;
 }
 
-.VPHero {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
-  border-radius: 16px;
-  padding: 64px 48px;
-  color: #fff !important;
-}
-
-.VPHero .container {
+/* 最强力居中：覆盖 VitePress 默认的 flex 行布局 */
+div.VPHero {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%) !important;
+  border-radius: 16px !important;
+  padding: 64px 48px !important;
+  color: #fff !important;
 }
 
-.VPHero .main {
-  flex: none !important;
+div.VPHero .container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+/* 隐藏空的图片占位，让文字占满 */
+div.VPHero .image {
+  display: none !important;
+}
+
+div.VPHero .main {
+  flex: 1 1 auto !important;
   width: 100% !important;
   max-width: 800px !important;
+  margin: 0 auto !important;
   text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
-.VPHero .heading {
+div.VPHero .heading {
   text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
-.VPHero .heading > span {
-  display: inline-block;
-  text-align: center !important;
-}
-
-.VPHero .name,
-.VPHero .text,
-.VPHero .tagline {
+div.VPHero .name,
+div.VPHero .text,
+div.VPHero .tagline {
   color: #fff !important;
   text-align: center !important;
+  display: block !important;
+  width: 100% !important;
 }
 
-.VPHero .name {
+div.VPHero .name {
   font-size: 1.5rem !important;
   opacity: 0.95;
-  display: block !important;
-  text-align: center !important;
 }
 
-.VPHero .text {
+div.VPHero .text {
   font-size: 3rem !important;
   font-weight: 700 !important;
   margin-bottom: 16px;
-  display: block !important;
-  text-align: center !important;
+  background: linear-gradient(90deg, #fff, #bfdbfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.VPHero .tagline {
-  font-size: 1.1rem;
+div.VPHero .tagline {
+  font-size: 1.15rem !important;
   margin-bottom: 24px;
   opacity: 0.95;
-  text-align: center !important;
 }
 
-.VPHero .actions {
+div.VPHero .actions {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
-.VPHero .actions > * {
-  margin: 0 8px;
+div.VPHero .actions > * {
+  margin: 0 8px !important;
+}
+
+/* Hero 按钮白底蓝字 */
+div.VPHero .actions .VPButton.brand {
+  background: #fff !important;
+  color: #2563eb !important;
+  border: 2px solid #fff !important;
+}
+
+div.VPHero .actions .VPButton.brand:hover {
+  background: #f0f7ff !important;
+}
+
+div.VPHero .actions .VPButton.alt {
+  background: transparent !important;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,0.6) !important;
+}
+
+div.VPHero .actions .VPButton.alt:hover {
+  background: rgba(255,255,255,0.1) !important;
+  border-color: #fff !important;
 }
 
 /* 首页特性卡片 */
