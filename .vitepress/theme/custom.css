@@ -23,6 +23,9 @@
   border-radius: 16px;
   padding: 64px 48px;
   margin: 24px 0;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .VPHero {
@@ -30,19 +33,29 @@
   border-radius: 16px;
   padding: 64px 48px;
   color: #fff !important;
-  text-align: center !important;
 }
 
 .VPHero .container {
-  text-align: center !important;
-  align-items: center !important;
+  display: flex !important;
   justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 .VPHero .main {
-  text-align: center !important;
+  flex: none !important;
+  width: 100% !important;
   max-width: 800px !important;
-  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.VPHero .heading {
+  text-align: center !important;
+}
+
+.VPHero .heading > span {
+  display: inline-block;
+  text-align: center !important;
 }
 
 .VPHero .name,
@@ -55,22 +68,29 @@
 .VPHero .name {
   font-size: 1.5rem !important;
   opacity: 0.95;
+  display: block !important;
+  text-align: center !important;
 }
 
 .VPHero .text {
   font-size: 3rem !important;
   font-weight: 700 !important;
   margin-bottom: 16px;
+  display: block !important;
+  text-align: center !important;
 }
 
 .VPHero .tagline {
   font-size: 1.1rem;
   margin-bottom: 24px;
   opacity: 0.95;
+  text-align: center !important;
 }
 
 .VPHero .actions {
+  display: flex !important;
   justify-content: center !important;
+  align-items: center !important;
   margin-top: 32px;
 }
 
