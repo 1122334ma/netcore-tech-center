@@ -116,7 +116,10 @@ export function setupSearchHighlight() {
   )
 
   const router = useRouter()
-  router.onAfterRouteChanged(() => {
+  // 注意: VitePress 的路由钩子是"属性赋值", 不是注册函数。
+  // 错误写法 router.onAfterRouteChanged(() => {...}) 会抛
+  // "onAfterRouteChanged is not a function", 导致整站黑屏。
+  router.onAfterRouteChange = (href: string) => {
     const q = sessionStorage.getItem(STORAGE_KEY)
     if (q) {
       sessionStorage.removeItem(STORAGE_KEY)
@@ -124,5 +127,5 @@ export function setupSearchHighlight() {
     } else {
       clearMarks()
     }
-  })
+  }
 }
