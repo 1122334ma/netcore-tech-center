@@ -47,7 +47,7 @@ export default defineConfig({
       },
       {
         text: '磊科知识库',
-        link: '/06-磊科知识库/',
+        link: '/06-kb/',
       },
       {
         text: '知识库入口',
@@ -106,15 +106,15 @@ export default defineConfig({
         },
       ],
       // 磊科知识库（飞书 Wiki 迁移）
-      '/06-磊科知识库/': [
+      '/06-kb/': [
         {
           text: '磊科知识库',
           items: [
-            { text: '概览', link: '/06-磊科知识库/' },
-            { text: '4G 路由器', link: '/06-磊科知识库/4G路由器' },
-            { text: '企业组网产品', link: '/06-磊科知识库/企业组网产品' },
-            { text: 'POE 和普通交换机', link: '/06-磊科知识库/POE和普通交换机' },
-            { text: '网络配件', link: '/06-磊科知识库/网络配件' },
+            { text: '概览', link: '/06-kb/' },
+            { text: '4G 路由器', link: '/06-kb/4g-router' },
+            { text: '企业组网产品', link: '/06-kb/enterprise' },
+            { text: 'POE 和普通交换机', link: '/06-kb/poe-switch' },
+            { text: '网络配件', link: '/06-kb/accessories' },
           ],
         },
       ],
