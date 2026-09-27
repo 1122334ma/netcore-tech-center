@@ -45,6 +45,10 @@ export default defineConfig({
         text: '常见问题FAQ',
         link: '/05-常见问题FAQ',
       },
+      {
+        text: '知识库入口',
+        link: '/00-关于本站/知识库入口',
+      },
     ],
 
     // 侧边栏
@@ -94,6 +98,15 @@ export default defineConfig({
           items: [
             { text: '概览', link: '/04-故障排查/' },
             { text: '常见故障排查', link: '/04-故障排查/常见故障排查' },
+          ],
+        },
+      ],
+      // 关于本站 / 知识库入口
+      '/00-关于本站/': [
+        {
+          text: '关于本站',
+          items: [
+            { text: '知识库入口', link: '/00-关于本站/知识库入口' },
           ],
         },
       ],
